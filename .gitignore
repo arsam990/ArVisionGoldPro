@@ -1,0 +1,14 @@
+# Data and Artifacts
+data/
+artifacts/
+
+# Flutter/Mobile local files
+mobile/.metadata
+mobile/build/
+.dart_tool/
+
+# Environment and OS files
+__pycache__/
+.env
+.DS_Store
+Thumbs.db
