@@ -237,10 +237,11 @@ class ActionCard extends StatelessWidget {
                 ],
               ),
             ),
-            const Icon(
+            Icon(
               Icons.arrow_forward_ios_rounded,
               size: 16,
-              color: Colors.black54,
+              color:
+                  isPrimary ? const Color(0xFF1F1304) : Colors.white70,
             ),
           ],
         ),
@@ -350,7 +351,7 @@ class GlassActionCard extends StatelessWidget {
                 const Icon(
                   Icons.arrow_forward_ios_rounded,
                   size: 16,
-                  color: Colors.white38,
+                  color: Colors.white60,
                 ),
               ],
             ),
