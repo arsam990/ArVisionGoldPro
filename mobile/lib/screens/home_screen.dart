@@ -332,7 +332,7 @@ class GlassActionCard extends StatelessWidget {
                         title,
                         style: GoogleFonts.rajdhani(
                           color: Colors.white,
-                      fontSize: 20,
+                          fontSize: 20,
                           fontWeight: FontWeight.w600,
                         ),
                       ),
