@@ -26,12 +26,12 @@ class _SplashScreenState extends State<SplashScreen>
       vsync: this,
       duration: const Duration(milliseconds: 1200),
     );
-    final curved = CurvedAnimation(
-      parent: _controller,
-      curve: Curves.easeOutCubic,
+    _fadeAnimation =
+        _controller.drive(CurveTween(curve: Curves.easeOutCubic));
+    _scaleAnimation = _controller.drive(
+      Tween<double>(begin: 0.85, end: 1)
+          .chain(CurveTween(curve: Curves.easeOutCubic)),
     );
-    _fadeAnimation = curved;
-    _scaleAnimation = Tween<double>(begin: 0.85, end: 1).animate(curved);
     _controller.forward();
     _timer = Timer(const Duration(seconds: 3), _navigateToHome);
   }
