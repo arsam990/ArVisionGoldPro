@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'screens/ar_screen.dart';
+import 'screens/splash_screen.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
@@ -30,7 +31,7 @@ class ARVisionGoldApp extends StatelessWidget {
         ),
         textTheme: GoogleFonts.rajdhaniTextTheme(ThemeData.dark().textTheme),
       ),
-      home: const ARScreen(),
+      home: const SplashScreen(),
     );
   }
 }
